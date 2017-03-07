@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="JavaScript_practice.css">
 
 <script src="./JavaScript_practice.js">
 
@@ -11,7 +12,8 @@
 
 </head>
 <body>
-
+	<button type="button" onclick="document.getElementById('Demo').innerHTML = Date()">Click me to display Date and Time.</button>
+	<p id="Demo">This is the time,if u click button</p>
 	<form>
 		<h3>My search form</h3>
 		<hr>
@@ -33,7 +35,23 @@
 			</p>
 		</p>
 	</form>
+	<hr>
+		<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
 
+		<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+
+		<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
+	<hr>
+		<button onclick="document.getElementById('testImage').src='https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/share%20img/centenario-facebook-og.jpg'">Your Lamborghini</button>
+		<img id="testImage" src="http://buyersguide.caranddriver.com/media/assets/submodel/7531.jpg" style="width: 300px;">
+		<button onclick="document.getElementById('testImage').src='http://pictures.topspeed.com/IMG/crop/201608/2014-ferrari-laferrari-26_600x0w.jpg'">Your Ferrari</button>
+	<hr>
+		<button onclick="document.getElementById('test').style.display='none'">click me!</button>
+		<div class="test" id="test">
+			this is a test
+		</div>
+		<button onclick="document.getElementById('test').style.display='value'">ckick me!</button>
+	<hr>
 
 <script type="text/javascript">
 
@@ -54,7 +72,20 @@ myClock.displayTime ();
 
 var str = "This is a string"
 document.writeln("<br>"+str)
-alert(str.length)
+
+
+var languages = {
+    english: "Hello!",
+    french: "Bonjour!",
+    notALanguage: 4,
+    spanish: "Hola!"
+};
+
+
+printLanguages(languages);
+
+
+
 
 
 </script>

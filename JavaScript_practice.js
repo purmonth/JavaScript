@@ -50,6 +50,19 @@ function checkFields(){
             validFlag = false
             alert("The" + document.form1.elements[i].name+"field is blank.Please enter a value.")
 
-    }
         }
+    }
 }
+
+
+
+function printLanguages(Languages){
+    document.write("<hr>");
+    for(var key in Languages){
+        if(typeof Languages[key] === 'string'){
+            document.write("<br>" + languages[key]);
+        }
+    }
+}
+
+

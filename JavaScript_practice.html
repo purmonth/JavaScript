@@ -36,6 +36,10 @@
 		</p>
 	</form>
 	<hr>
+		<button onclick="document.write(5+6)">
+			click it and will change to other place
+		</button>
+	<hr>
 		<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
 
 		<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
@@ -50,8 +54,9 @@
 		<div class="test" id="test">
 			this is a test
 		</div>
-		<button onclick="document.getElementById('test').style.display='value'">ckick me!</button>
+		<button onclick="document.getElementById('test').style.display='initial'">ckick me!</button>
 	<hr>
+	<p class="Test"></p>
 
 <script type="text/javascript">
 
@@ -85,8 +90,23 @@ var languages = {
 printLanguages(languages);
 
 
+var car = {
+	type:"Fiat",
+	model:"50",
+	color:"white",
+	name:"name",
+	callname: function(){
+		return "<br>" + this.type + " " + this.model + " " + this.color + this.id;
+	}
+}
 
+document.writeln(car.callname());
 
+var person = {
+	name:"hogan",
+	name:"Amy",
+	name:"Tom"
+}
 
 </script>
 </body>

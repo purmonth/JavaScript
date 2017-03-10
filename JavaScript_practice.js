@@ -66,3 +66,49 @@ function printLanguages(Languages){
 }
 
 
+function calidateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if(x == ""){
+        alert("Name must be filled out");
+        return false;
+    }
+}
+
+
+function myFunction(p1, p2) {
+    return p1 * p2;
+}
+
+
+
+function CheckFunction() {
+    var inpObj= document.getElementById("id1");
+    if(inpObj.checkValidity() == false){
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    }else{
+        document.getElementById("demo").innerHTML = "Input OK";
+    }
+}
+
+function promptFunction(){
+    var person = prompt("Please enter your name","Hogan");
+    if(person != null){
+        document.getElementById("prompt").innerHTML = "Hello " + person + "! How are you tosay?"
+    }
+}
+
+function animateMove(){
+    var elem = document.getElementById("animate");
+    var pos = 0;
+    var id = setInterval(frame, 5);
+    function frame(){
+        if(pos == 350){
+            clearInterval(id);
+        }else{
+            pos++;
+            elem.style.top = pos + 'px'; 
+            elem.style.left = pos + 'px'; 
+        }
+    }
+}
+

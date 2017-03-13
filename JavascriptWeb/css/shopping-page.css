@@ -1,0 +1,125 @@
+/** page ShoppingPage **/
+.Content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.DivStyle {
+  display: initial;
+}
+
+.ShoppingPage {
+  width: 100%;
+  text-align: center;
+}
+
+.Container {
+  width: 100%;
+  text-align: center;
+}
+
+/** block  PayWindow **/
+.PayWindow_Content {
+  width: 100%;
+}
+
+/** block ShoppingPageFlow **/
+.ShoppingPageFlow {
+  height: 150px;
+  background-color: #ebebeb;
+  border-bottom: solid 1px #747474;
+  display: flex;
+}
+
+.ShoppingPageFlow_Item {
+  cursor: pointer;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  margin: 20px 0;
+  border-right: 1px solid #747474;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.ShoppingPageFlow_Item_Caption {
+  font-family: 'Lora', serif;
+  font-size: 26px;
+  margin: auto;
+}
+
+.ShoppingPageFlow_Item-selected {
+  color: black;
+  -webkit-animation: valo-animate-in-fade 200ms;
+  -moz-animation: valo-animate-in-fade 200ms;
+  animation: valo-animate-in-fade 200ms;
+}
+
+.ShoppingPageFlow_Stage {
+  width: 70%;
+  padding: 25px 0;
+}
+
+/** block ShoppingPageFlow **/
+.ShoppingCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ShoppingFinance {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ShoppingPayment {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/** block ShoppingPageFooter **/
+.ShoppingPageFooter {
+  height: 250px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-image: url(../image/footer_bg.png);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lora', serif;
+}
+
+.ShoppingPageFooter_Logo {
+  height: 60px;
+  width: 180px;
+  background: url(../icons/logo_DCBP.png) no-repeat center;
+  background-size: 100% auto;
+  padding-bottom: 20px;
+}
+
+.ShoppingPageFooter_Caption {
+  padding-top: 10px;
+  height: 13px;
+}
+
+.ShoppingPageFooter_Caption>img {
+  height: 100%;
+  width: auto;
+}
+
+.ShoppingPageFooter_Address {
+  height: 40px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding-top: 50px;
+}
+
+/** misc modifier **/
+.dev {
+  border: 1px dotted;
+}

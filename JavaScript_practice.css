@@ -6,7 +6,7 @@
 
 #container {
 	width: 400px;
-	height: 400px;
+	height: 100px;
 	position: relative;
 	background: yellow;
 }
@@ -16,4 +16,12 @@
 	height: 50px;
 	position: absolute;
 	background: red;
+}
+
+.button01{
+	background: green;
+	width: 100px;
+	height: 20px;
+	cursor: pointer;
+	
 }

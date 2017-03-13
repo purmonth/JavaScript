@@ -112,3 +112,32 @@ function animateMove(){
     }
 }
 
+$(document).ready(function(){
+    $(".button01").click(function(){
+        $(".first").empty(1000);
+    });
+    $(".button02").click(function(){
+        $("#container").fadeToggle(700);
+    });
+    $(".button03").click(function(){
+        $("#container").slideToggle(700);
+    });
+    $(".button04").click(function(){
+        $(".third").toggle(1000);
+    });
+});
+
+function afterText(){
+    var txt1 = "<b>I <b>";
+    var txt2 = $("<i></i>").text("love");
+    var txt3 = document.createElement("b");
+    txt3.innerHTML = "JQuery!";
+    $("h1").after(txt1,txt2,txt3);
+}
+
+
+$(document).ready(function(){
+    $("ButtonGroup_Button").click(function(){
+        $("this").addClass("ButtonGroup_Button-selected");
+    });
+});

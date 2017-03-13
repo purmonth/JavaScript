@@ -1,0 +1,79 @@
+.Inspection{
+    height: 1081px;
+    min-width: 1450px;
+    background: url(../image/bg_1.2_3.jpg) no-repeat;
+    background-size:100% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Inspection_Content{
+    height: 100%;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;   
+    justify-content: center;
+}
+
+.Inspection_Img {
+    background: url(../icons/car_3.png) center no-repeat;
+    height: 900px;
+    width: 450px;
+    background-size: 100% auto;
+
+}
+
+.InspectionWord{
+    width: 450px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 0  100px 100px;
+}
+
+
+
+
+
+.InspectionWord_List{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+
+
+.InspectionWord_List_Caption{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 4px;
+    font-weight: 200;
+    margin-left: 35px;
+}
+
+
+.InspectionWord_List_Arrow{
+    height: 20px;
+    width: 15px;
+    background: url(../icons/red_arrow.png) no-repeat left;
+    background-size: auto 60%;
+    display: flex;
+    align-items: center;
+   
+}
+
+.InspectionWord_List_Detail{
+    width: 70%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    opacity: 0.7;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin: 0 0 15px 50px; 
+}
+    

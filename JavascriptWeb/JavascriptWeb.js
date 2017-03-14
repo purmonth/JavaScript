@@ -1,7 +1,8 @@
 $(document).ready(function(){
 	$(".ButtonGroup_Button").click(function(){
-		$(".ButtonGroup_Button").toggleClass("ButtonGroup_Button-selected");
-	})
+		$(".ButtonGroup_Button").removeClass("ButtonGroup_Button-selected");
+		$(this).toggleClass("ButtonGroup_Button-selected");
+	});
 });
 
 $(document).ready(function(){
@@ -15,7 +16,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$(".ShoppingPageFlow_Item").click(function(){
-		$(".ShoppingPageFlow_Item").toggleClass("ShoppingPageFlow_Item-selected")
+		$(".ShoppingPageFlow_Item").removeClass("ShoppingPageFlow_Item-selected")
+		$(this).toggleClass("ShoppingPageFlow_Item-selected")
 	});
 });
 

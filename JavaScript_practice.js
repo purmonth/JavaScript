@@ -142,26 +142,16 @@ $(document).ready(function(){
     });
 });
 
-// A $( document ).ready() block.
-$( document ).ready(function() {
-    console.log( "ready!" );
-});
 
 
 
 
+var canvas = document.createElement('canvas');
+canvas.width = 500;
+canvas.height = 250;
+var ctx = canvas.getContext('2d');
+ctx.font = '30px Cursive';
+ctx.fillText("Hello world!", 50, 50);
+document.body.appendChild(canvas);
 
-    
-(function(i,s,o,g,r,a,m){
-    i['GoogleAnalyticsObject']=r;
-    i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
-        a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;
-        a.src=gm.parentNode.insertBefore(a,m)
-    })
-    (window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-XXXXX-Y', 'auto');
-    ga('send', 'pageview');
 

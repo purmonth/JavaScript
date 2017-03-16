@@ -18,21 +18,20 @@ $(document).ready(function(){
 	$(".ShoppingPageFlow_Item").click(function(){
 		$(".ShoppingPageFlow_Item").removeClass("ShoppingPageFlow_Item-selected")
 		$(this).toggleClass("ShoppingPageFlow_Item-selected")
+		var status = $(".ShoppingPageFlow_Item").index;
+		console.log(status);
+	});
+});
+
+$(document).ready(function(){
+	$(".ItemCart_Row_Trash").click(function(){
+		$(this).parent().hide();
+		console.log("document.body");
 	});
 });
 
 
-$(window).scroll(function(){
-	if($(this).scrollTop() >= 500){
-		$(".BuyNowBlock").css("position","fixed").css("top","200px");
-	}
-	if($(this).scrollTop() < 500){
-		$(".BuyNowBlock").css("position","absolute").css("top","600px");
-	}
-});
 
+$(document).ready(function(){
+})
 
-/**
-$(".ButtonGroup_Button").toggleClass(".ButtonGroup_Button-selected");
-$(".ButtonGroup_Button:last").addClass(".ButtonGroup_Button-selected");
-**/
